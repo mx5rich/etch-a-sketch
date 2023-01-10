@@ -26,7 +26,8 @@ function entryHint() {
 }
 
 //Makes nested divs that are organized into a grid using CSS flexbox.
-//Invalid entries get warning, default grid is 16x16, else it is user a defined.
+//Invalid entries get warning, default grid is 16x16, else it is user a defined resolution.
+function makeGrid() {
   let number = userValue.value;
   if (number < 0 || number > 99 || isNaN(number)) {
     promptText.textContent = "Make sure it's a number from 2 to 99!";
